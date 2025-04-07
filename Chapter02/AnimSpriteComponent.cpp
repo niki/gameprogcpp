@@ -20,20 +20,24 @@ void AnimSpriteComponent::Update(float deltaTime)
 {
 	SpriteComponent::Update(deltaTime);
 
-	if (mAnimTextures.size() > 0)
+	if (mAnimTextures.size() > 0 && mCurrentTable != -1)
 	{
+		std::vector<int> table = mAnimPatternArray[mCurrentTable];
+
 		// Update the current frame based on frame rate
 		// and delta time
 		mCurrFrame += mAnimFPS * deltaTime;
-		
+
 		// Wrap current frame if needed
-		while (mCurrFrame >= mAnimTextures.size())
+		int patternNum = table.size();
+		while (mCurrFrame >= patternNum)
 		{
-			mCurrFrame -= mAnimTextures.size();
+			mCurrFrame -= patternNum;
 		}
 
 		// Set the current texture
-		SetTexture(mAnimTextures[static_cast<int>(mCurrFrame)]);
+		int tableIndex = table[static_cast<int>(mCurrFrame)];
+		SetTexture(mAnimTextures[tableIndex]);
 	}
 }
 
@@ -47,3 +51,24 @@ void AnimSpriteComponent::SetAnimTextures(const std::vector<SDL_Texture*>& textu
 		SetTexture(mAnimTextures[0]);
 	}
 }
+
+void AnimSpriteComponent::SetAnimTable(const std::vector<int>& array)
+{
+	mAnimPatternArray.push_back(array);
+}
+
+void AnimSpriteComponent::SetAnimIndex(int index)
+{
+	mCurrentTable = index;
+
+	if (mAnimTextures.size() > 0 && mCurrentTable != -1)
+	{
+		// Set the active texture to first frame
+		mCurrFrame = 0.0f;
+
+		std::vector<int> table = mAnimPatternArray[mCurrentTable];
+		int tableIndex = table[static_cast<int>(mCurrFrame)];
+		SetTexture(mAnimTextures[tableIndex]);
+	}
+}
+
