@@ -115,10 +115,19 @@ int main(int argc, char** argv)
 
 	//StudyMain();
 
-	int a = 100;
-	int b = add(a, 100);
-	printf("a=%d, b=%d\n", a, b);
-	
+	{
+		int		a = 100;
+		int		b = 200;
+		int		c = add(a, b);
+		printf("a=%d, b=%d c=%d \n ", a, b, c);
+	}
+	{
+		float a = 100;
+		float b = 200;
+		float c = add(a, b);
+		printf("a=%d, b=%d c=%d \n ", a, b, c);
+	}
+
 	bool success = game.Initialize();
 	if (success)
 	{
