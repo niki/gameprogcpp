@@ -11,6 +11,12 @@
 #include <string>
 
 
+template <typename T>
+T add(T& value, const T& num)
+{
+	return value + num;
+}
+
 // クラスのテスト
 class Vector3D {
 public:
@@ -107,7 +113,11 @@ int main(int argc, char** argv)
 
 	// 学習メイン
 
-	StudyMain();
+	//StudyMain();
+
+	int a = 100;
+	int b = add(a, 100);
+	printf("a=%d, b=%d\n", a, b);
 	
 	bool success = game.Initialize();
 	if (success)
