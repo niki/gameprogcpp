@@ -12,9 +12,10 @@
 
 
 template <typename T>
-T add(T& value, const T& num)
+T& add(T& value, const T& num)
 {
-	return value + num;
+	static T ret = value + num;
+	return ret;
 }
 
 // クラスのテスト
