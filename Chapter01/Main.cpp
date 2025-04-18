@@ -51,7 +51,7 @@ public:
 
 		return ret;
 	}
-	Vector3D& operator =(const Vector3D& r) 
+	const Vector3D& operator =(const Vector3D& r) 
 	{
 		this->x = r.x;
 		this->y = r.y;
@@ -59,7 +59,7 @@ public:
 	
 		return *this;
 	}
-	Vector3D& operator +=(const Vector3D& r)
+	const Vector3D& operator +=(const Vector3D& r)
 	{
 		this->x += r.x;
 		this->y += r.y;
@@ -116,6 +116,18 @@ int main(int argc, char** argv)
 
 	//StudyMain();
 
+	auto y = [&] (int first, int second)
+	{
+		first += 3;
+		return first + second;
+	};
+
+	int first = 1;
+	int second = 2;
+	std::cout << "1 y = " << y(first, second) << std::endl;
+	std::cout << "2 y = " << y(first, second) << std::endl;
+
+#if 0
 	{
 		int		a = 100;
 		int		b = 200;
@@ -128,6 +140,7 @@ int main(int argc, char** argv)
 		float c = add(a, b);
 		printf("a=%d, b=%d c=%d \n ", a, b, c);
 	}
+#endif
 
 	bool success = game.Initialize();
 	if (success)
