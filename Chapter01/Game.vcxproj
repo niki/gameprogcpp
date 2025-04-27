@@ -13,12 +13,26 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StudyCpp_ConstantExpression_01.cpp" />
     <ClCompile Include="StudyCpp_decltype_01.h.cpp" />
+    <ClCompile Include="StudyCpp_Lambda_01.cpp" />
+    <ClCompile Include="StudyCpp_RangeFor_01.cpp" />
+    <ClCompile Include="StudyCpp_RawString_01.cpp" />
+    <ClCompile Include="StudyCpp_static_assert_01.cpp" />
+    <ClCompile Include="StudyCpp_std_pair_01.cpp" />
+    <ClCompile Include="StudyCpp_template_01.cpp" />
     <ClCompile Include="Vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="StudyCpp_ConstantExpression_01.h" />
     <ClInclude Include="StudyCpp_decltype_01.h" />
+    <ClInclude Include="StudyCpp_Lambda_01.h" />
+    <ClInclude Include="StudyCpp_RangeFor_01.h" />
+    <ClInclude Include="StudyCpp_RawString_01.h" />
+    <ClInclude Include="StudyCpp_static_assert_01.h" />
+    <ClInclude Include="StudyCpp_std_pair_01.h" />
+    <ClInclude Include="StudyCpp_template_01.h" />
     <ClInclude Include="Vector3D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

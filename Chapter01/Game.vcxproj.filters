@@ -19,6 +19,27 @@
     <ClCompile Include="Vector3D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StudyCpp_template_01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyCpp_RangeFor_01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyCpp_std_pair_01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyCpp_RawString_01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyCpp_ConstantExpression_01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyCpp_static_assert_01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyCpp_Lambda_01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -28,6 +49,27 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Vector3D.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyCpp_template_01.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyCpp_RangeFor_01.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyCpp_std_pair_01.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyCpp_RawString_01.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyCpp_ConstantExpression_01.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyCpp_static_assert_01.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyCpp_Lambda_01.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

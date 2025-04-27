@@ -3,7 +3,8 @@
 #include <iostream>
 #include <string>
 
-
+// ƒ‚ƒ_ƒ“‚È C++ ‚ð‚Í‚¶‚ß‚æ‚¤‘æ‚Q”Å: C++98/03‚©‚ç C++11/14/17‚Ö Kindle”Å
+// Page 54
 template <typename T>
 struct Rectangle {
 	T left;
