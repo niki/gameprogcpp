@@ -7,6 +7,9 @@
 // ----------------------------------------------------------------
 
 #include "Game.h"
+#include "StudyCpp_MoveAndCopy.h"
+
+
 
 const int thickness = 15;
 const float paddleH = 100.0f;
@@ -71,6 +74,10 @@ bool Game::Initialize()
 
 void Game::RunLoop()
 {
+
+	StudyCpp_MoveAndCopy_Test();
+
+
 	while (mIsRunning)
 	{
 		ProcessInput();

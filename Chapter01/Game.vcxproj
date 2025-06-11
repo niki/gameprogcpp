@@ -16,6 +16,7 @@
     <ClCompile Include="StudyCpp_ConstantExpression_01.cpp" />
     <ClCompile Include="StudyCpp_decltype_01.h.cpp" />
     <ClCompile Include="StudyCpp_Lambda_01.cpp" />
+    <ClCompile Include="StudyCpp_MoveAndCopy.cpp" />
     <ClCompile Include="StudyCpp_RangeFor_01.cpp" />
     <ClCompile Include="StudyCpp_RawString_01.cpp" />
     <ClCompile Include="StudyCpp_static_assert_01.cpp" />
@@ -28,6 +29,7 @@
     <ClInclude Include="StudyCpp_ConstantExpression_01.h" />
     <ClInclude Include="StudyCpp_decltype_01.h" />
     <ClInclude Include="StudyCpp_Lambda_01.h" />
+    <ClInclude Include="StudyCpp_MoveAndCopy.h" />
     <ClInclude Include="StudyCpp_RangeFor_01.h" />
     <ClInclude Include="StudyCpp_RawString_01.h" />
     <ClInclude Include="StudyCpp_static_assert_01.h" />
